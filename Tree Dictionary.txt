@@ -1,0 +1,50 @@
+Tree Dictionary:
+
+This data structure is a Tree where each node represents a character. Each path in the tree starting from the root and ending in one of the leaves represents a certain string. The leaves contain a special character ‘$’ which indicates the end of the string. The following figure is an example of this data structure.
+
+Your task is to build this data structure by implementing the following operations: Insert (char *s). This operation inserts the string s in the tree.
+
+Delete (char *s). This operation deletes the string s from the tree.
+Search (char *s). This operation prints Yes or No based on whether the string s exists in the tree or not.
+StartsWith(char *s). This operation prints all strings that start with string s. Strings are sorted then printed.
+Longest(). This operation prints the longest string stored in the tree (assume there is only one such string).
+Input Format
+
+N (the number of commands, N is an integer)
+command 1
+command 2
+...
+command N
+Constraints
+
+N is between 1 to 500
+
+Output Format
+
+result of command 1
+result of command 2
+...
+result of command N
+Sample Input 0
+
+12
+insert Mall
+insert Me
+insert Mat
+insert Cat
+insert Rat
+insert Mandy
+delete Mandy
+startwith Ma
+search Cat
+search Me
+search Mandy
+longest
+Sample Output 0
+
+Mall
+Mat
+YES
+YES
+NO
+Mall
